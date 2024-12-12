@@ -10,55 +10,59 @@
 </head>
 
 <body>
-
+    <!--Header-->
     <nav id="nav-top" class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="color: #1487ff">FalAI Doutor</a>
+            <a class="navbar-brand" href="home.html">FalAI Doutor</a>
 
             <div id="div-links" class="collapse navbar-collapse">
                 <ul class="links navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">bbbbb</a>
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class=" nav-item">
+                        <a href="#" class="nav-link">*Em construção*</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">ccccc</a>
+                        <a href="#" class="nav-link">*Em construção*</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">ddddd</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">eeeee</a>
+                        <a href="Login.html" class="nav-link"
+                            style="text-decoration: underline; color: #1487ff">Triagem</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div class="container login-container">
-        <div class="row">
-            <main>
-                <p class="login-title mb-4 mt-3">Acesse sua triagem</p>
-                <form method="POST" action="/login">
-                    <div id="input-div" class="mb-3">
-                        <label for="email" class="form-label">Senha da fila</label>
-                        <input type="text" class="form-control" id="senhaFila" name="senhaFila" required>
-                    </div>
-                    <div id="input-div" class="mb-4">
-                        <label for="cpf" class="form-label">CPF</label>
-                        <input type="text" class="form-control" id="cpf" name="cpf" required>
-                    </div>
-                    <div id="button-div" class="mb-3 d-flex justify-content-center">
-                        <button type="submit" class="btn btn-primary">Entrar</button>
-                    </div>
-                </form>
-            </main>
+    <!--Main content-->
+    <main>
+        <div class="container login-container">
+            <div class="row">
+                <main>
+                    <p class="login-title mb-4 mt-3">Acesse sua triagem</p>
+                    <form method="POST" action="/login">
+                        <div id="input-div" class="mb-3">
+                            <label for="email" class="form-label">Senha da fila</label>
+                            <input type="text" class="form-control" id="senhaFila" name="senhaFila" required>
+                        </div>
+                        <div id="input-div" class="mb-4">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpf" name="cpf" required>
+                        </div>
+                        <div id="button-div" class="mb-3 d-flex justify-content-center">
+                            <a href="Login.html" class="btn btn-primary">Entrar</a>
+                        </div>
+                    </form>
+                </main>
+            </div>
         </div>
-    </div>
+    </main>
 
+    <!--Footer-->
     <footer>
         <div class="footer-content-left">
-            <p>Termos de uso</p>
-            <p>Políticas de privacidades</p>
+            <p style="cursor:pointer">Termos de uso</p>
+            <p style="cursor:pointer">Políticas de privacidades</p>
         </div>
         <div class="footer-content-right">
             <p>Nossos contatos</p>

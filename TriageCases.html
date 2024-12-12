@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos de pacientes</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/TriageCasesStyle.css">
+</head>
+
+<body>
+
+    <!--Sidebar-->
+    <aside class="col-sm-2 sidebar">
+        <p class="sidebar-brand" style="color: #1487ff">FalAI Doutor</p>
+        <div>
+            <a href="TriageCases.html">Casos</a>
+            <a href="#">*Em construção*</a>
+            <a href="#">*Em construção*</a>
+        </div>
+    </aside>
+
+    <!--Main content-->
+    <main class="container">
+        <div id="title-div" style="border-bottom: 1px solid black;">
+            <h1 class="page-title">Casos de Pacientes</h1>
+        </div>
+
+
+        <section id="filters-div">
+            <!-- Search field -->
+            <div class="row align-items-center">
+                <div class="col-sm-12">
+                    <label for="search-input" class="form-label">Pesquisa por nome:</label>
+                    <input type="text" id="search-input" class="form-control"
+                        placeholder="Digite um nome para pesquisar..." />
+                </div>
+            </div>
+
+
+            <!-- Select field -->
+            <div class="row align-items-center">
+                <div class="col-sm-12 d-flex" style="height: 4vh; margin-top: 1vh;">
+                    <label for="category-select" class="mt-1">Filtrar por risco:</label>
+                    <select id="category-select" class="form-select ml-2">
+                        <option value="">Todos</option>
+                        <option value="urgente">Urgente</option>
+                        <option value="não-urgente">Grave</option>
+                        <option value="moderado">Moderado</option>
+                        <option value="pouco-urgente">Baixo</option>
+                        <option value="pouco-urgente">Não urgente</option>
+                    </select>
+                    <button id="btn-filter" class="btn btn-primary">Filtrar</button>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="case-row" style="border-left: 8px solid #fe0000;">
+            <div class="case-details">
+                <p><strong>Nome:</strong> Rodrigo Martins</p>
+                <p><strong>Idade:</strong> 56 anos</p>
+                <p><strong>Gênero:</strong> Masculino</p>
+            </div>
+            <div class="case-status">
+                <p><strong>Grau de Risco:</strong> Urgente</p>
+                <p><strong>Senha da fila:</strong> 1324-B</p>
+            </div>
+            <div class="case-actions">
+                <a href="TriageResult.html" class="btn btn-primary">Detalhes</a>
+            </div>
+        </div>
+
+
+        <div class="case-row" style="border-left: 8px solid #ffd900;">
+            <div class="case-details">
+                <p><strong>Nome:</strong> João Silva</p>
+                <p><strong>Idade:</strong> 29 anos</p>
+                <p><strong>Gênero:</strong> Masculino</p>
+
+            </div>
+            <div class="case-status">
+                <p><strong>Grau de Risco:</strong> Moderado</p>
+                <p><strong>Senha da fila:</strong> 783-U</p>
+
+            </div>
+            <div class="case-actions">
+                <button class="btn btn-primary">Detalhes</button>
+            </div>
+        </div>
+
+        <div class="case-row" style="border-left: 8px solid #28a745;">
+            <div class="case-details">
+                <p><strong>Nome:</strong> Luanna Rodriguez</p>
+                <p><strong>Idade:</strong> 34 anos</p>
+                <p><strong>Gênero:</strong> Feminino</p>
+            </div>
+            <div class="case-status">
+                <p><strong>Grau de Risco:</strong> Baixo</p>
+                <p><strong>Senha da fila:</strong> 1325-B</p>
+
+            </div>
+            <div class="case-actions">
+                <button class="btn btn-primary">Detalhes</button>
+            </div>
+        </div>
+
+        <div class="case-row" style="border-left: 8px solid #00e5ff;">
+            <div class="case-details">
+                <p><strong>Nome:</strong> Renata Maria</p>
+                <p><strong>Idade:</strong> 45 anos</p>
+                <p><strong>Gênero:</strong> Feminino</p>
+            </div>
+            <div class="case-status">
+                <p><strong>Grau de Risco:</strong> Pouco urgente</p>
+                <p><strong>Senha da fila:</strong> 2344-C</p>
+
+            </div>
+            <div class="case-actions">
+                <button class="btn btn-primary">Detalhes</button>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+</body>
+
+</html>

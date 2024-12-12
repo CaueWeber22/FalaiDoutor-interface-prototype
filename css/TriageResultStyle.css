@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fdfdfd;
+}
+
+#title-div{
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
+.page-title {
+    margin-bottom: 1vw;
+    font-size: 250%;
+    font-weight: bold;
+    color: #1487ff;
+    text-align: left;
+    
+}
+
+.data {
+    border-bottom: 1px solid #060606;
+}
+.data span {
+  font-weight: 400;
+}
+
+.label {
+    font-weight: bold;
+    color: #000000;
+}
+
+#triage-data-section{
+  margin-top: 5vh;
+}
+
+.triage-data{
+  border: 1px solid #1487ff;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+  width: 100%;
+}
+
+
+/* SIDEBAR */
+.sidebar {
+    height: 100vh;
+    width: 12vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #202020;
+    padding-top: 20px;
+    box-shadow: 1px 1px 8px rgb(39, 39, 39);
+  }
+  
+  .sidebar a {
+    padding: 1vh 0.5vw;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .sidebar h4 {
+    color: #005bb5;
+    margin-bottom: 3vh;
+  }
+  
+  .sidebar a:hover {
+    background-color: #005bb5;
+    color: white;
+  }
+
+  .sidebar-brand{
+    font-weight: bolder;
+    font-size: 150%;
+    margin-bottom: 2vh;
+}

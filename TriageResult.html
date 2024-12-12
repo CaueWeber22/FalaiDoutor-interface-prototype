@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do paciente</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/TriageResultStyle.css">
+</head>
+
+<body>
+
+    <!--Sidebar-->
+    <aside class="col-sm-2 sidebar">
+        <p class="sidebar-brand" style="color: #1487ff">FalAI Doutor</p>
+        <div>
+            <a href="TriageCases.html">Casos</a>
+            <a href="#">*Em construção*</a>
+            <a href="#">*Em construção*</a>
+        </div>
+    </aside>
+
+    <!--Main content-->
+    <main class="container mt-4">
+
+        <div id="title-div" style="border-bottom: 1px solid black;">
+            <h1 class="page-title">Dados do caso</h1>
+        </div>
+
+        <!--Case data-->
+        <section class="row">
+            <div class="col-md-7">
+
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <p style="font-weight: bold;">Senha da fila
+                            <span class="ml-2" style="font-weight: 400;">1324-B</span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-12">
+                        <p style="font-weight: bold;">Data de realização da triagem:
+                            <span class="ml-2" style="font-weight: 400;">05/11/2024</span>
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <p style="font-weight: bold;">Hora de realização da triagem:
+                            <span class="ml-2" style="font-weight: 400;">11:59:03</span>
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <!--Personal Data section-->
+        <section class="row" style="margin-top: 5vh;">
+            <div class="col-md-7">
+                <h4 class="mb-2" style="color: #1487ff;">Informações Pessoais</h4>
+
+                <div class="data row mt-4">
+                    <div class="col-md-6">
+                        <p class="label">Nome:
+                            <span class="ml-3 value">Rodrigo Martins</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="data row mt-3">
+                    <div class="col-md-6">
+                        <p class="label">Gênero:
+                            <span class="ml-3 value">Masculino</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <p class="label">Cisgênero:
+                            <span class="ml-3 value">Sim</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="data row mt-3">
+                    <div class="col-md-6">
+                        <p class="label">Data de nascimento:
+                            <span class="ml-3 value">20/12/1978</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <p class="label">Idade:
+                            <span class="ml-3 value">56 anos</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="data row mt-3">
+                    <div class="col-md-6">
+                        <p class="label">Número CNS:
+                            <span class="ml-3 value">0909090909</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Triage data -->
+        <section id="triage-data-section">
+            <h4 class="mb-3" style="color: #1487ff;">Dados da Triagem</h4>
+
+            <div class="row">
+                <!-- Dados Enviados -->
+                <div class="triage-data col-sm-12 p-3">
+                    <h5 class="mb-3" style="color: #000000; font-weight: bolder;">Dados enviados pelo
+                        paciente</h5>
+                    <div class="">
+                        <p>"Estou com febre alta (acima de 38,5ºC), dor muscular intensa, dor nos olhos,
+                            mal-estar,
+                            falta
+                            de apetite, dor de cabeça e manchas vermelhas no corpo."</p>
+                    </div>
+                </div>
+
+                <!-- Dados Recebidos -->
+                <div class="triage-data col-sm-12">
+                    <h5 class="mb-3 mt-3" style="color: #000000; font-weight: bolder;">Resultado gerado</h5>
+                    <div class="p-3">
+                        <p style="font-weight: 550;">Classificação de risco:
+                            <span class="ml-3" style="font-weight: 400;">Urgente (Vermelho)</span>
+                        </p>
+
+                        <p style="font-weight: 550;">Justificativa:
+                            <span class="ml-3" style="font-weight: 400;">A temperatura alta acima de 38,5°C
+                                indica uma
+                                condição grave que pode levar a
+                                complicações. Juntamente com outros sintomas como dor muscular intensa,
+                                mal-estar e dor
+                                de
+                                cabeça, estes podem ser sinais preocupantes de septicemia ou infecção grave.
+                                Além disso,
+                                as
+                                manchas vermelhas no corpo também podem indicar uma reação alérgica ou algo
+                                mais grave.
+                                É
+                                importante buscar um atendimento médico imediatamente para avaliação e
+                                tratamento
+                                adequado.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
